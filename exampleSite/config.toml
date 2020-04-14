@@ -4,6 +4,17 @@ title = "Hugo Story Theme"
 paginate = 5
 buildFuture = true
 
+# From v0.60.0 Hugo uses 'goldmark' as its default markdown renderer.
+# (source: https://gohugo.io/news/0.60.0-relnotes/)
+# This sounds like great news from Hugo developpers but it breaks a lot of things.
+# Among those lies the  URL fragment technique used by the story theme
+# (see https://www.xaprb.com/blog/how-to-style-images-with-markdown)
+# 
+# Here we restore the former markdown renderer as explained in
+# https://gohugo.io/getting-started/configuration-markup/
+# [markup]
+#  defaultMarkdownHandler = "blackFriday"
+
 [[menu.social]]
   name = "GitHub"
   title = "fab fa-github-square"
